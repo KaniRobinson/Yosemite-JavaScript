@@ -1,0 +1,88 @@
+body, html{
+	min-width:100%;
+	width:100%;
+	max-width:100%;
+	min-height:100%;
+	height:100%;
+	max-height:100%;
+	background: url('../images/Wallpaper.jpg') 100% 100%;
+	padding:0;
+	left:0;
+	top:0;
+	margin:0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+ul, ol{
+	list-style: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+#menubar{
+    width: 100%;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.64);
+    box-shadow: 0px 0px 1px 1px #B9B9B9;
+}
+#container{
+	width: 100%;
+	height: calc(100% - 115px);
+}
+#menu-items.left{
+	float:left;
+}
+#menu-items.right{
+	float:right;
+}
+#menu-items{
+	display:inline-block;
+	vertical-align:top;
+    height: 100%;
+    line-height: 25px;
+    margin:0px 10px;
+}
+#menu-items li{
+	display:inline-block;
+	vertical-align: top;
+	margin:0px 0px 0px -4px;
+    height: 100%;
+    padding: 0px 6px;
+}
+.icon{
+    line-height: 25px!important;
+    padding: 0px 3px;
+}
+
+.icon {
+	font-size: 17px!important;
+}
+.page.drops{
+    font-weight: bold;
+}
+#dock{
+	width: 1000px;
+	height: 90px;
+	background: rgba(255, 255, 255, 0.64);
+	margin: 0px auto;
+	border-radius: 6px 6px 0px 0px;
+}
+.Application{
+	position: absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	margin: auto;
+	width:300px;
+	height:300px;
+}
+.spotlight{
+    width: 800px;
+    height: 250px;
+    background: rgba(234, 234, 234, 0.9);
+    box-shadow: 0px 0px 10px 1px #B9B9B9;
+    border-radius: 6px;
+}
