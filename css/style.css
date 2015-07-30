@@ -21,11 +21,17 @@ ul, ol{
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
+li {
+	list-style: none;
+}
+:focus {
+    outline: none;
+}
 #menubar{
     width: 100%;
     height: 25px;
-    background: rgba(255, 255, 255, 0.64);
     box-shadow: 0px 0px 1px 1px #B9B9B9;
+    overflow: hidden;
 }
 #container{
 	width: 100%;
@@ -44,12 +50,18 @@ ul, ol{
     line-height: 25px;
     margin:0px 10px;
 }
+#menu-items li:active{
+	background: #1A6FDC;
+	color: #FFF;
+}
 #menu-items li{
 	display:inline-block;
 	vertical-align: top;
 	margin:0px 0px 0px -4px;
     height: 100%;
     padding: 0px 6px;
+    cursor: default;
+    font-size: 15px;
 }
 .icon{
     line-height: 25px!important;
@@ -68,6 +80,7 @@ ul, ol{
 	background: rgba(255, 255, 255, 0.64);
 	margin: 0px auto;
 	border-radius: 6px 6px 0px 0px;
+	overflow:hidden;
 }
 .Application{
 	position: absolute;
@@ -78,11 +91,78 @@ ul, ol{
 	margin: auto;
 	width:300px;
 	height:300px;
+    overflow: hidden;
+    color: #424952;
 }
 .spotlight{
     width: 800px;
     height: 250px;
-    background: rgba(234, 234, 234, 0.9);
     box-shadow: 0px 0px 10px 1px #B9B9B9;
-    border-radius: 6px;
+    border-radius: 4px;
+}
+.Blur{
+    background: rgba(234, 234, 234, 0.95);
+    -webkit-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 30px;
+    margin: -30px;
+}
+.AppContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.AppContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.Spotlight-search-head{
+    width: 100%;
+    height: 70px;
+    border-bottom:1px solid #CCC;
+}
+.Spotlight-search-head .fa-search{
+    width: 70px;
+    height: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 28px;
+}
+.Spotlight-search-head input{
+    padding: 0;
+    width: calc(100% - 100px);
+    height: 100%;
+    font-size: 26px;
+    color: #424952;
+    border: none;
+    background: transparent;	
+}
+.Spotlight-search-body{
+    width: 100%;
+    height: calc(100% - 70px);
+}
+.split-spotlight{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #CCC;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px -4px 0px 0px;
+    overflow-y: scroll;
+}
+.Spotlight-search-results li{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    border-bottom: 1px solid #CCC;
+    text-indent: 15px;
+    cursor: pointer;
+}
+.Spotlight-search-results li:hover, .Spotlight-search-results li:active{
+    background: #1A6FDC;
+    color: #FFF;
 }
